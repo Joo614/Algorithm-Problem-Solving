@@ -14,5 +14,7 @@ please fork it and follow the instruction to get pair's code dynamically
 
 <br />
 와우
->>>>>>> 8e6b59a2b9660b6c21cca6150707d856b038b497
+
 드디어!!!
+
+페어 과제 끝 !
