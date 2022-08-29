@@ -1,6 +1,5 @@
 
-<<<<<<< HEAD
-제발 돼라..!!
+제발돼라라..!!
 =======
 please fork it and follow the instruction to get pair's code dynamically
 
@@ -16,7 +15,7 @@ please fork it and follow the instruction to get pair's code dynamically
 와우
 
 드디어!!!
-<<<<<<< HEAD
 
 페어 과제 끝 !
-감격격...!
+
+감격...!
