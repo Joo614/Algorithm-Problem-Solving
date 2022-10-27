@@ -16,7 +16,7 @@ class Solution {
         
         if(countP == 0 && countY == 0) return true;
         
-        answer = countP == countY ? true : false;
+        answer = countP == countY ? true : false; //앞의 조건식이 맞으면 true / 틀리면 false 반환
         
         return answer;
     }
