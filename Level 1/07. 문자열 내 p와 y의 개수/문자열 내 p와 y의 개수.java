@@ -8,9 +8,9 @@ class Solution {
         
         for(int i = 0; i < s.length(); i++) {
             if(s.charAt(i) == 'p') {
-                countP++;
+                countP++; //의 개수 세기
             }else if(s.charAt(i) == 'y') {
-                countY++;
+                countY++; //y의 개수 세기
             }
         }
         
