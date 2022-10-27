@@ -1,2 +1,2 @@
 # Algorithm-Problem-Solving
-It's a repository that solves Algorithm problems.
+It's a repository for algorithmic problem solving.
