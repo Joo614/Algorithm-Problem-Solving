@@ -1,9 +1,7 @@
 class Solution {
     public int solution(int[] absolutes, boolean[] signs) {
-        //signs의 i번째가 false면 absolutes의 i번째 요소에 -를 붙이고
-        //true면 그냥 아무것도 붙이지 않고
-        //새 배열에 넣어
-        //그리고 absolutes 배열 돌면서 하나씩 더해서 합을 리턴
+        //signs의 i번째가 false면 absolutes의 sum에서 i번째 요소를 빼주고
+        //true면 더해
         
         int sum = 0;
         
