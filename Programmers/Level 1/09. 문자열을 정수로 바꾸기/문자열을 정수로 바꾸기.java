@@ -3,7 +3,6 @@ class Solution {
         
         int answer = Integer.parseInt(s);
         
-        
         return answer;
     }
 }
