@@ -1,4 +1,5 @@
 import java.util.*; //이거 꼭 import 하기
+
 class Solution {
     public long solution(long n) {
         String str = Long.toString(n); //n을 String 타입으로 만들고
