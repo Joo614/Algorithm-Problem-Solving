@@ -6,8 +6,8 @@ class Solution {
  
         int temp = 0;
         
-        for(int i=0; i<numbers.length-1; i++){
-            for(int j=i+1; j<numbers.length; j++){
+        for(int i = 0; i < numbers.length-1; i++){
+            for(int j = i+1; j < numbers.length; j++){
                 temp = numbers[i] + numbers[j];
                 if (!list.contains(temp)) { // list에 해당 수를 포함하고 있지 않다면 넣기
                     list.add(temp);
