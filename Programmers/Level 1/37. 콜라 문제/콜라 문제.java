@@ -29,11 +29,10 @@ class Solution {
       
         int answer = 0;
 
-        while (n >= a) { // 위와 다른 게 여기는 아예 이걸 이렇게 제한해줌
+        while (n >= a) { // 위와 다른 게 여기는 아예 이걸 이렇게 제한하고 나머지 해줌
             answer += b * (n / a);
             n = b * (n / a) + n % a;
         }
-
         return answer;
     }
 }
