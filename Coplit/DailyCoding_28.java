@@ -10,9 +10,7 @@ public class Solution {
     opener.put('[', ']');
     opener.put('(', ')');
 
-
     String closer = "}])";
-
 
     for(int i = 0; i < str.length(); i++) {
       
