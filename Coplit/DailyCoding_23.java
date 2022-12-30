@@ -4,7 +4,7 @@ public class Solution {
   public int fibonacci(int num) {
     ArrayList<Integer> memo = new ArrayList<>();
     memo.add(0);
-    memo.add(1);
+    memo.add(1);   
 
     return aux(memo, num);
   }
