@@ -8,7 +8,7 @@ class Solution {
             map.put(e, map.getOrDefault(e, 0) + 1);
         }
         
-        // 개수기준으로 정렬
+        // 개수 기준으로 정렬
         List<Integer> keylist = new ArrayList<>(map.keySet());
         Collections.sort(keylist, new customComparator());
 
