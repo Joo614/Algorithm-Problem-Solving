@@ -18,7 +18,7 @@ class Solution {
         
         answer[0] = gcd(max, min);
         answer[1] = max*min/answer[0];
-        
+         
         return answer;
     }
 }
