@@ -4,7 +4,7 @@ public class Solution {
 	int left = 0;
 	int right = arr.length - 1;
 
-	while (left <= right) {
+	while (left <= right) {  
 		int middle = (right + left) / 2;
 
 		if (arr[middle] == target)
