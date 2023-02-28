@@ -13,7 +13,7 @@ public class Solution {
     for(int i = 0; i < str.length(); i++) {
       if(digits.indexOf(str.charAt(i)) != -1) {
         sum = sum + Character.getNumericValue(str.charAt(i));
-      } else if(str.charAt(i) != ' ') {
+      } else if(str.charAt(i) != ' ') {   
         pureStr = justStr + str.charAt(i);
       }
     }
