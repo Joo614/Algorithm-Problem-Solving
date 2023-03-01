@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Solution { 
-	public int[] heapSort(int[] arr) {   
+	public int[] heapSort(int[] arr) {
 
     		PriorityQueue<Integer> heap = new PriorityQueue<Integer>();
 
