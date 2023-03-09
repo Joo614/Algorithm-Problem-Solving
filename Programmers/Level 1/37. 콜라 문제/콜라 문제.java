@@ -13,7 +13,7 @@ class Solution {
                 break;
             }
             
-            // 가지고 있는 빈 병 수가 a개보다 크면 시작
+            // 가지고 있는 빈 병 수가 a개보다 크면 시작   
             answer += (n / a) * b; // answer에 n에서 a를 나눈 몫에 교환받는 콜라 수 b를 곱해서 넣어줌
             
             n = ((n/a)*b)+(n%a); // n을 answer에 넣어준 만큼과 a로 나눈 나머지를 더하여 구현
@@ -22,7 +22,7 @@ class Solution {
     }
 }
 
-/////// 다른 풀이 ///////
+/////// 다른 풀이 ///////  
 
 class Solution {
     public int solution(int a, int b, int n) {
@@ -32,7 +32,7 @@ class Solution {
         while (n >= a) { // 위와 다른 게 여기는 아예 이걸 이렇게 제한하고 나머지 해줌
             answer += b * (n / a);
             n = b * (n / a) + n % a;
-        }
+        } 
         return answer;
     }
 }
