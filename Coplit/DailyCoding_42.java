@@ -9,7 +9,7 @@ public class Solution {
 			int rightStep = cnt;
 
 			if (leftIdx == arr1.length) {
-				rightIdx = rightIdx + k;
+				rightIdx = rightIdx + k;  
 				break;
 			}
 
