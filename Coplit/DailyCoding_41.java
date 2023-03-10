@@ -3,7 +3,7 @@ public class Solution {
 
 	int left = 0;
 	int right = arr.length - 1;
-
+    
 	while (left <= right) {  
 		int middle = (right + left) / 2;
 
@@ -16,7 +16,7 @@ public class Solution {
       		else {
 			left = middle + 1;
 		}
-	}   
+	}     
 	return -1;
 	}
 }
