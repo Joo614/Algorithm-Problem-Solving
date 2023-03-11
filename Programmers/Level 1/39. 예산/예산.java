@@ -11,7 +11,7 @@ class Solution {
         int sum = 0; // 총 금액
         int count = 0; // 몇 부서 지원할 수 있는지
 
-        Arrays.sort(d);
+        Arrays.sort(d);   
 
         for(int i = 0; i < d.length; i++) {
             sum += d[i];
