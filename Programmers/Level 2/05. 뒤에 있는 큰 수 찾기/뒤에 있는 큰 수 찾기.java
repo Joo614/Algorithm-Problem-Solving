@@ -9,7 +9,7 @@ class Solution {
         for(int i = 1; i < numbers.length; i++){
             while(!s.isEmpty()){
                 int idx = s.pop();
-                if(numbers[i] > numbers[idx]){ // 뒤가 더 클때
+                if(numbers[i] > numbers[idx]){ // 뒤가 더 클 때
                     answer[idx] = numbers[i];
                 } else { // 앞이 더 크거나 같을 때
                     s.push(idx);
