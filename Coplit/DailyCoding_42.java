@@ -22,7 +22,7 @@ public class Solution {
 			if (cnt > arr2.length - rightIdx) rightStep = arr2.length - rightIdx;
 
 			if (arr1[leftIdx + leftStep - 1] < arr2[rightIdx + rightStep - 1]) {
-				leftIdx = leftIdx + leftStep;
+				leftIdx = leftIdx + leftStep;  
 
 				k = k - leftStep;
 			} else {
@@ -33,6 +33,6 @@ public class Solution {
 		int leftMax = (leftIdx - 1 < arr1.length) ? arr1[leftIdx - 1] : -1;
 		int rightMax = (rightIdx - 1 < arr2.length) ? arr2[rightIdx - 1] : -1;
 
-		return Math.max(leftMax, rightMax);
+		return Math.max(leftMax, rightMax);  
 	}
 }
