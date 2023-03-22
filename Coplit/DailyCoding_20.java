@@ -9,7 +9,7 @@ public class Solution {
 
     int count = 1;
     
-    String result = "";
+    String result = "";   
 
     str = str + ' ';
     
@@ -25,10 +25,10 @@ public class Solution {
           for(int j = 0; j < count; j++) {
             result = result + before;
           }
-        }
+        }  
         before = str.charAt(i);
         count = 1;
-      }
+      }  
     }
     return result;
   }
