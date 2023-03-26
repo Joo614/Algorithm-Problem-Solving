@@ -9,7 +9,7 @@ public class Solution {
 	}
 
 
-	private int[] sort(int[] arr, int left, int right) {
+private int[] sort(int[] arr, int left, int right) {
     int part = partition(arr, left, right);
     if (left < part - 1)
       arr = sort(arr, left, part - 1);
@@ -18,7 +18,7 @@ public class Solution {
     return arr;
   }
 
-	private int partition(int[] arr, int left, int right) {
+private int partition(int[] arr, int left, int right) {
     int pivot = arr[(left + right) / 2];
     while (left <= right) {
 
