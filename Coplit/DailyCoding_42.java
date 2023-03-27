@@ -19,6 +19,7 @@ public class Solution {
 			}
 
 			if (cnt > arr1.length - leftIdx) leftStep = arr1.length - leftIdx;
+			
 			if (cnt > arr2.length - rightIdx) rightStep = arr2.length - rightIdx;
 
 			if (arr1[leftIdx + leftStep - 1] < arr2[rightIdx + rightStep - 1]) {
@@ -30,6 +31,7 @@ public class Solution {
 				k = k - rightStep;
 			}
 		}
+		
 		int leftMax = (leftIdx - 1 < arr1.length) ? arr1[leftIdx - 1] : -1;
 		int rightMax = (rightIdx - 1 < arr2.length) ? arr2[rightIdx - 1] : -1;
 
