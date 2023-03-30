@@ -20,7 +20,7 @@ class Solution {
                 break;
             }
         }
-        if (sum <= budget) {
+        if (sum <= budget) {   
             count = d.length;
         }
 
