@@ -8,7 +8,7 @@ public class Solution {
 
 			if(rotated[middle] == target) {
 				return middle;
-			}
+			}  
 
 			if (rotated[left] < rotated[middle]) {
       				if (target < rotated[middle] && rotated[left] <= target) {
@@ -16,7 +16,7 @@ public class Solution {
       				}
       			else {
        				left = middle + 1;
-      			}
+      			}  
     		}
     		else {
 			if (target <= rotated[right] && rotated[middle] < target) {
@@ -25,7 +25,7 @@ public class Solution {
       		else {
 				right = middle - 1;
 			}
-    		}
+    		}  
 	}
 	return -1;
   } 
