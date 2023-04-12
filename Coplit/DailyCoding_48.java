@@ -8,7 +8,7 @@ public class Solution {
 		for(int member : set) {
 
 			ArrayList<Integer> reachables = new ArrayList<>();
-
+ 
 			for(int wanted = 1; wanted <= bound - member; wanted++) {
 				if(cached[wanted]) {
 					int reached = wanted + member;
@@ -23,7 +23,7 @@ public class Solution {
 				cached[member] = true;
 				if (member > max) max = member;
 			}
-		}
+		}  
 		return max;
 	}
 }
