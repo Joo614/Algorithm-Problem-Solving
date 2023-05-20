@@ -14,7 +14,7 @@ class Solution {
 }
 
 /////// 다른 풀이 ////////
-( 다른 사람 풀이 공부하기 )
+( 다른 사람 풀이로 stream 공부하기 )
 
 import java.util.*;
 import java.util.stream.*;
