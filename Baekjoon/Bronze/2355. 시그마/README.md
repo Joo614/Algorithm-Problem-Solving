@@ -1,4 +1,4 @@
-# [Bronze II] 시그마 - 2355 
+# [Bronze II] 시그마 - 2355
 
 [문제 링크](https://www.acmicpc.net/problem/2355) 
 
