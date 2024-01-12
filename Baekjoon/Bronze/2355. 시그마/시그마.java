@@ -1,6 +1,6 @@
 // 가우스 덧셈 공식
 // n<m일 때, n부터 m까지의 정수를 모두 더한 값은
-// (n+m) * (m-n+1) / 2
+// (n+m) * (m-n+1) / 2 --> 처음 수와 마지막 수의 합 * 더할 숫자의 총 개수 / 2
 import java.util.Scanner;
 
 public class Main {
