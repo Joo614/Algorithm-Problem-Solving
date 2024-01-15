@@ -7,20 +7,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new java.util.Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         long A = scan.nextLong();
         long B = scan.nextLong();
         long V = scan.nextLong();
+        long count;
 
         if (V == A) {
-            System.out.println(1);
+            count = 1;
         } else if ((V-A) % (A-B) == 0) {
-            long count = (V-A) / (A-B) + 1;
-            System.out.println(count);
+            count = (V-A) / (A-B) + 1;
         } else {
-            long count = (V-A) / (A-B) + 2;
-            System.out.println(count);
+            count = (V-A) / (A-B) + 2;
         }
+
+        System.out.println(count);
     }
 }
