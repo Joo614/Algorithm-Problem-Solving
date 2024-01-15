@@ -9,14 +9,17 @@ public class Main {
  
 	long a = scan.nextLong();
         long b = scan.nextLong();
+	long result;
         
         if (a < b) {
-            System.out.println((a+b) * (b-a+1) / 2);
+            result = (a+b) * (b-a+1) / 2;
         } else if (b < a) {
-            System.out.println((a+b) * (a-b+1) / 2);
+            result = (a+b) * (a-b+1) / 2;
         } else {
-            System.out.println(a);
+            result = a;
         }
+	    
+        System.out.println(result);
     }
 }
 
