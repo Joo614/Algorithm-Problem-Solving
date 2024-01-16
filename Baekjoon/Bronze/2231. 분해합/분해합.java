@@ -14,7 +14,7 @@ public class Main {
             int sum = 0;
 
             // 생성자의 자릿수 합 구하기
-            while (number != 0) {
+            while (number >0 0) {
                 sum += number % 10;
                 number /= 10;
             }
