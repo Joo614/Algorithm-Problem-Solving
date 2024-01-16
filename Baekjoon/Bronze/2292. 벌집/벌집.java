@@ -7,8 +7,7 @@ import java.io.InputStreamReader;
 // 2-7 -> count 2
 // 8-19 -> count 3
 // 20-37 -> count 4
-// 이런 식으로 n이 어디 그룹에 속해있는지 확인 후
-// 해당 그룹 수 +1 하기 (1이 있는 그룹 포함해야하니까)
+// 이런 식으로 n이 어디 그룹에 속해있는지 확인
 
 public class Main {
     public static void main(String[] args) throws IOException {
