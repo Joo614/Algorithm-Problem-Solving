@@ -8,13 +8,13 @@ public class Main {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		br.readLine(); // N 은 쓰지 않음.
+		br.readLine(); // N 은 쓰지 않음
 
 		int count = 0;
 
 		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // 공백 기준으로 끊어줌
 
-		while (st.hasMoreTokens()) { // st.hasMoreTokens() : StringTokenizer에 사용할 수 있는 토큰이 더 있는지 확인ㄴ
+		while (st.hasMoreTokens()) { // 토큰이 없을 때까지
 			int num = Integer.parseInt(st.nextToken());
 			
 			if (isPrime(num)) {
@@ -24,7 +24,7 @@ public class Main {
 		System.out.println(count);
 	}
 
-
+	// 소수 확인 부분 메서드로 분리
 	public static boolean isPrime(int num) {
 		if (num == 1)
 			return false;
