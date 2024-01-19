@@ -12,9 +12,10 @@ public class Main {
         int N = Integer.parseInt(st.nextToken()); // 카드의 개수
         int M = Integer.parseInt(st.nextToken()); // 세 수의 최대 합
 
-        // 배열에 담기
-        int[] arr = new int[N];
+        // 둘째 줄 읽어와서 배열에 담기
         st = new StringTokenizer(br.readLine(), " "); // 둘째 줄 읽어옴 ( 카드들 )
+	
+	int[] arr = new int[N];
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
