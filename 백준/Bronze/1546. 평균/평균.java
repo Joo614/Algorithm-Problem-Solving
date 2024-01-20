@@ -13,14 +13,9 @@ public class Main {
         st = new StringTokenizer(br.readLine(), " "); // 현재 성적
 
         int[] arr = new int[N]; // 현재 성적 배열에 담기
+        int max = 0;
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
-        }
-
-        int max = arr[0]; // 최댓값 초기화
-
-        // 최댓값 찾기
-        for (int i = 1; i < N; i++) {
             if (arr[i] > max) {
                 max = arr[i];
             }
