@@ -12,7 +12,8 @@ public class Main {
 
         st = new StringTokenizer(br.readLine(), " "); // 현재 성적
 
-        int[] arr = new int[N]; // 현재 성적 배열에 담기
+        // 현재 성적 배열에 담기 + 최댓값 찾기
+        int[] arr = new int[N];
         int max = 0;
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
@@ -21,13 +22,14 @@ public class Main {
             }
         }
 
-        double newGrade = 0;
+        // 새 점수 환산 후 합계 구하기
         double sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            newGrade = (double)arr[i]/max*100;
+            double newGrade = (double) arr[i]/max*100;
             sum += newGrade;
         }
-        
+
+        // 평균 구하기
         double avg = sum / N;
 
         System.out.println(avg);
