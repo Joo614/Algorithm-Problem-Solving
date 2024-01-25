@@ -13,7 +13,7 @@ public class Main {
 
         // 쵀대공약수
         int greatest = 0;
-        for (int i = 1; i <= a && i <= b; i++) {
+        for (int i = 1; i <= a && i <= b; i++) {  // a,b 중 작은 값까지만 반복
             if (a % i == 0 && b % i == 0) {
                 greatest = i;
             }
