@@ -18,8 +18,8 @@ public class Main {
         }
 
         String str = big.toString();
-        for (int i = str.length() - 1; i >= 0; i--) { // 뒤부터 자릿수 확인
-            if (str.charAt(i) - '0' == 0) count++; // 0이 맞으면 count++
+        for (int i = str.length() - 1; i > 1; i--) { // 뒤부터 자릿수 확인
+            if (str.charAt(i) == '0') count++;
             else break;
         }
 
