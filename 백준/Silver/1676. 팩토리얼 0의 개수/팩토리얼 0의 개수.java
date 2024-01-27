@@ -10,7 +10,8 @@ public class Main {
         int N = Integer.parseInt(br.readLine());
         int count = 0; // 0의 개수 카운트
 
-        BigInteger big = new BigInteger("1"); // 객체 생성 후 1로 초기화
+        BigInteger big = new BigInteger("1"); // 객체 생성 후 1로 초기화 --> 문자열 "1"을 가지는 BigInteger 객체 생성
+        // 이후 이 객체에 다른 객체값을 곱해줄 것이기 때문에 0이 아닌, 1로 초기화
 
         // N! 계산
         for (int i = 1; i <= N; i++) {
