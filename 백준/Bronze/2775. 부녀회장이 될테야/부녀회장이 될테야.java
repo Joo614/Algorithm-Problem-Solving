@@ -29,7 +29,7 @@ public class Main {
         for (int i = 0; i < T; i++) {
             int k = Integer.parseInt(br.readLine());
             int n = Integer.parseInt(br.readLine());
-            sb.append(arr[k][n] + "\n"); // 사람 수 출력
+            sb.append(arr[k][n]).append("\n"); // 사람 수 출력
         }
 
         System.out.println(sb);
