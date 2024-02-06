@@ -20,7 +20,7 @@ public class Main {
 
         // 나이순 정렬
         Arrays.sort(arr, new Comparator<>() { // 배열 arr 의 요소를 Comparator<String[]>에 의해 정의된 방식으로 정렬
-            // 문자열 배열을 비교하여 정렬할 것이므로 Comparator<String[]> 사용
+            // 컴파일러의 타입추론으로 좀 더 유연성있는 코드를 만들기 위해 Comparator<String[]>보다 new Comparator<> 사용
             @Override // 객체 정의를 위해 꼭 오버라이드
             public int compare(String[] s1, String[] s2) { // 두 요소 비교하고 정렬 순서 결정
                 return Integer.parseInt(s1[0]) - Integer.parseInt(s2[0]);
