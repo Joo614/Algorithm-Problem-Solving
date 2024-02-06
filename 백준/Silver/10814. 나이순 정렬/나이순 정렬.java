@@ -24,6 +24,10 @@ public class Main {
             @Override // 객체 정의를 위해 꼭 오버라이드
             public int compare(String[] s1, String[] s2) { // 두 요소 비교
                 return Integer.parseInt(s1[0]) - Integer.parseInt(s2[0]); // 오름차순
+                // 배열의 첫번째 요소를 정수로 반환하여 비교 --> 이를 통해 배열의 첫번째 요소를 기준으로 정렬됨
+                // s1[0]이 s2[0]보다 작으면 음수 반환 --> 첫번재 인자가 앞에 위치하도록 정렬
+                // s1[0]이 s2[0]과 같으면 0 반환 --> 순서 변경 X
+                // s1[0]이 s2[0]보다 크면 양수 반환 --> 두번째 인자가 앞에 위치하도록 정렬
             }
         });
 
