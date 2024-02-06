@@ -23,17 +23,18 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         sb.append("<");
 
-        int removalIndex = 0; // 제거될 사람의 인덱스
-
+        int removalNum = 0; // 제거될 인덱스의 숫자
+        
         while (N > 1) { // 마지막 요소 하나 남을 때 까지
             // K번째 요소를 제거하려면 배열은 0부터 인덱스 시작이기 때문에 K-1번째 제거해야함
             // Ex. 7, 3 이라면
-            removalIndex = (removalIndex + (K - 1)) % N; // 1. 2 % 7 == 2 // 2. (2+(3-1)) % 7 == 4
-            sb.append(people.remove(removalIndex)).append(", "); // 1. 2번째 인덱스(3) 가져와서 제거 후 print // 2. 4번째 인덱스(6) 가져와서 제거 후 print
+            removalNum = (removalNum + (K - 1)) % N; // 1. 2 % 7 == 2 // 2. (2+(3-1)) % 7 == 4
+            sb.append(people.remove(removalNum)).append(", "); // 1. 2번째 인덱스(3) 가져와서 제거 후 반환 // 2. 4번째 인덱스(6) 가져와서 제거 후 반환
 
             N--;
         }
 
+        // 마지막으로 남은 요소 삭제와 동시에 반환
         sb.append(people.remove(0)).append(">");
         System.out.println(sb);
     }
