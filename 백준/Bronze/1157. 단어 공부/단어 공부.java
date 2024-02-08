@@ -31,3 +31,44 @@ public class Main {
         System.out.println(answer);
     }
 }
+
+/////// 다른 풀이 ///////
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+
+// HashMap을 사용한 풀이
+// key 에 알파벳, value 에 해당 알파벳의 개수를 넣을 것임
+public class No_1157_2 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        String word = br.readLine().toUpperCase();
+
+        Map<Character, Integer> countMap = new HashMap<>(); // 알파벳의 등장 횟수 저장할 map
+
+        for (char c : word.toCharArray()) { // word를 char 배열로 만들어 순환하면서
+            countMap.put(c, countMap.getOrDefault(c, 0) + 1);
+        }
+
+        int maxCount = 0; // 가장 많이 등장한 횟수
+        char mostFrequent = '?'; // 가장 많이 등장한 알파벳
+
+        for (Map.Entry<Character, Integer> entry : countMap.entrySet()) {
+
+            int count = entry.getValue();
+
+            if (maxCount < count) {
+                maxCount = count;
+                mostFrequent = entry.getKey();
+            } else if (maxCount == count) {
+                mostFrequent = '?';
+            }
+        }
+
+        System.out.println(mostFrequent);
+    }
+}
