@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -19,21 +18,21 @@ public class Main {
     }
 
     public static String solve(String str) {
-        Stack<Character> stack = new Stack<>();
+        int count = 0; // 여는 괄호의 개수
 
         for (char ch : str.toCharArray()) {
             if (ch == '(') {
-                stack.push(ch);
-            } else if (ch == ')') {
-                if (stack.empty() || stack.peek() != '(') {
+                count++;
+            } else if (ch == ')') { // 짝 만날 때마다 --
+                count--;
+
+                if (count < 0) { // 여는 괄호 수 - 닫는 괄호 수가 음수일 경우 --> 닫는 괄호가 더 많을 경우 NO
                     return "NO";
                 }
-                else
-                    stack.pop();
             }
         }
 
-        if (stack.isEmpty())
+        if (count == 0)
             return "YES";
         else
             return "NO";
