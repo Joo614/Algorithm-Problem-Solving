@@ -12,19 +12,15 @@ public class Main {
 		int H = Integer.parseInt(st.nextToken()); // 시
 		int M = Integer.parseInt(st.nextToken()); // 분
 
-		int rest = M - 45;
+		M -= 45;
 
-		if (rest < 0) {
+		if (M < 0) {
+			M += 60;
 			H--;
-			if (H < 0) { // 시간이 음수가 되면
+			if (H < 0) // 시간이 음수가 되면
 				H = 23;
-			}
-			M += 60; // 양수로 만든 다음
-			M -= 45; // 45분 빼줘
-		} else {
-			M = rest;
 		}
-        
+
 		sb.append(H).append(" ").append(M);
 		System.out.println(sb);
 	}
