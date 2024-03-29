@@ -36,8 +36,8 @@ public class Main {
 			}
 		}
 
-		int minTime = 99999999; // 땅을 고르게 할 수 있는 최소 시간 - 올 수 있는 값은 6400만정도로 예상 되기에 넉넉히 9999만을 저장
-		int minHigh = 0; // 땅을 고르게 할 수 있는 최소 높이
+		int minTime = Integer.MAX_VALUE; // 땅을 고르게 할 수 있는 최소 시간 - 최솟값 저장을 위해 일단 젤 큰 값으로 할당
+		int maxHigh = 0; // 땅을 고르게 할 수 있는 최대 높이
 
 		for (int h = min; h <= max; h++) { // 블럭의 높이(h)를 계속 올리면서 찾을 거임
 			int time = 0; // 소모하는 시간
@@ -62,10 +62,10 @@ public class Main {
 			// 답이 여러개일 경우 그 중 땅의 높이가 가장 높은 것 출력
 			if (minTime >= time) {
 				minTime = time;
-				minHigh = h;
+				maxHigh = h;
 			}
 		}
 
-		System.out.println(minTime + " " + minHigh);
+		System.out.println(minTime + " " + maxHigh);
 	}
 }
